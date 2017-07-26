@@ -1,26 +1,110 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Easy_Authen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="280px-ราชภัฏภูเก็ต.png" translatesAutoresizingMaskIntoConstraints="NO" id="wMC-gD-8WN">
+                                <rect key="frame" x="132" y="53" width="150" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="8mX-Mf-OHk"/>
+                                    <constraint firstAttribute="width" constant="150" id="Iac-Tm-7KU"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGK-vt-EB4">
+                                <rect key="frame" x="91" y="318" width="232" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2la-dG-nor"/>
+                                    <constraint firstAttribute="width" constant="232" id="c7h-qZ-4hT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A9N-hv-ycZ">
+                                <rect key="frame" x="91" y="377" width="232" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qnp-i0-oOs"/>
+                                    <constraint firstAttribute="width" constant="232" id="TX0-QR-vYH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IxL-1e-cr5">
+                                <rect key="frame" x="150" y="428" width="114" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIR-aw-B53">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.82601116430477883" blue="0.38339590610503071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="114" id="6j5-5A-Zod"/>
+                                            <constraint firstAttribute="height" constant="35" id="Ba3-iZ-mc8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="0.52883403963155762" blue="0.26467887578956806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="12b-cX-ASy">
+                                <rect key="frame" x="20" y="661" width="374" height="20.333333333333371"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zr-ZW-NWc">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.66301595153437365" blue="0.30370076944191216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wMC-gD-8WN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="4CD-XS-ZQ3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="12b-cX-ASy" secondAttribute="trailing" id="6QB-pZ-eal"/>
+                            <constraint firstItem="HGK-vt-EB4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Tm-V7-Etx"/>
+                            <constraint firstItem="wMC-gD-8WN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BTC-bA-ADU"/>
+                            <constraint firstItem="A9N-hv-ycZ" firstAttribute="top" secondItem="HGK-vt-EB4" secondAttribute="bottom" constant="29" id="Bz6-MQ-TeH"/>
+                            <constraint firstItem="12b-cX-ASy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gt2-zd-bMs"/>
+                            <constraint firstItem="12b-cX-ASy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KMa-Ef-ldz"/>
+                            <constraint firstItem="12b-cX-ASy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PjF-nJ-Niw"/>
+                            <constraint firstItem="wMC-gD-8WN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q50-IO-ZoX"/>
+                            <constraint firstItem="wMC-gD-8WN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="RLI-H2-1b2"/>
+                            <constraint firstItem="12b-cX-ASy" firstAttribute="top" secondItem="IxL-1e-cr5" secondAttribute="bottom" constant="198" id="fY0-f3-hzz"/>
+                            <constraint firstItem="IxL-1e-cr5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hfs-4e-RNU"/>
+                            <constraint firstItem="HGK-vt-EB4" firstAttribute="top" secondItem="wMC-gD-8WN" secondAttribute="bottom" constant="60" id="hkL-2d-ogh"/>
+                            <constraint firstItem="IxL-1e-cr5" firstAttribute="top" secondItem="A9N-hv-ycZ" secondAttribute="bottom" constant="21" id="i0X-5R-v0D"/>
+                            <constraint firstItem="A9N-hv-ycZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="msl-gh-N7B"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="123.09782608695653"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="280px-ราชภัฏภูเก็ต.png" width="280" height="358"/>
+    </resources>
 </document>

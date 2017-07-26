@@ -12,6 +12,7 @@
 		B14B76A81F2887DE003EF9BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14B76A61F2887DE003EF9BA /* Main.storyboard */; };
 		B14B76AA1F2887DE003EF9BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14B76A91F2887DE003EF9BA /* Assets.xcassets */; };
 		B14B76AD1F2887DE003EF9BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14B76AB1F2887DE003EF9BA /* LaunchScreen.storyboard */; };
+		B14B76B51F288BD1003EF9BA /* 280px-ราชภัฏภูเก็ต.png in Resources */ = {isa = PBXBuildFile; fileRef = B14B76B41F288BD1003EF9BA /* 280px-ราชภัฏภูเก็ต.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B14B76A91F2887DE003EF9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14B76AC1F2887DE003EF9BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B14B76AE1F2887DE003EF9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14B76B41F288BD1003EF9BA /* 280px-ราชภัฏภูเก็ต.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "280px-ราชภัฏภูเก็ต.png"; path = "../../../../Desktop/280px-ราชภัฏภูเก็ต.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				B14B76A21F2887DE003EF9BA /* AppDelegate.swift */,
+				B14B76B41F288BD1003EF9BA /* 280px-ราชภัฏภูเก็ต.png */,
 				B14B76A41F2887DE003EF9BA /* ViewController.swift */,
 				B14B76A61F2887DE003EF9BA /* Main.storyboard */,
 				B14B76A91F2887DE003EF9BA /* Assets.xcassets */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B14B76AD1F2887DE003EF9BA /* LaunchScreen.storyboard in Resources */,
+				B14B76B51F288BD1003EF9BA /* 280px-ราชภัฏภูเก็ต.png in Resources */,
 				B14B76AA1F2887DE003EF9BA /* Assets.xcassets in Resources */,
 				B14B76A81F2887DE003EF9BA /* Main.storyboard in Resources */,
 			);
