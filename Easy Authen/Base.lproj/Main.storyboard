@@ -64,6 +64,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" red="1" green="0.52883403963155762" blue="0.26467887578956806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lKI-1I-FQX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -98,6 +101,11 @@
                             <constraint firstItem="A9N-hv-ycZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="msl-gh-N7B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mrssageLabel" destination="6Zr-ZW-NWc" id="GwA-Rh-BaD"/>
+                        <outlet property="passwordTextField" destination="A9N-hv-ycZ" id="aC9-Dz-ERQ"/>
+                        <outlet property="userTextField" destination="HGK-vt-EB4" id="CfS-xB-9Gc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
